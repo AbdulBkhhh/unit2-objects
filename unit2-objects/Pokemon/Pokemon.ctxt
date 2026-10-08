@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Pokemon
+comment0.text=\n\ Represents\ a\ Pokemon\ actor\ in\ Greenfoot.\n
+comment1.params=hp\ ap\ name\ attackName\ type
+comment1.target=Pokemon(int,\ int,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment10.params=
+comment10.target=void\ act()
+comment2.params=
+comment2.target=java.lang.String\ getType()
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment4.params=
+comment4.target=int\ getHp()
+comment5.params=
+comment5.target=boolean\ isOut()
+comment6.params=damage
+comment6.target=void\ takeDamage(int)
+comment6.text=\n\ Reduces\ HP\ when\ attacked.\n
+comment7.params=aName\ enemy
+comment7.target=int\ getAttackPower(java.lang.String,\ User)
+comment7.text=\n\ Calculates\ total\ damage\ based\ on\ AP\ and\ type\ advantages\ if\ needed.\n
+comment8.params=aName\ enemy
+comment8.target=void\ attack(java.lang.String,\ User)
+comment8.text=\n\ Executes\ an\ attack\ on\ an\ enemy\ user's\ active\ Pokemon.\n
+comment9.params=
+comment9.target=void\ heal()
+numComments=11
