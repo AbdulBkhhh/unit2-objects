@@ -1,5 +1,3 @@
-package Server;
-
 import java.util.*;
 import java.io.*;
 import java.net.*;
@@ -35,18 +33,31 @@ public class SimpleServer {
         out.close();
     }
     public static void main(String[] args) throws Exception{
+<<<<<<< HEAD
         SimpleServer smp = new SimpleServer(1234);
         smp.acceptClient();
         Scanner input=new Scanner(System.in);
         while(true){
+=======
+        SimpleServer smp = new SimpleServer(9090);
+        smp.acceptClient();
+        Scanner input=new Scanner(System.in);
+        while(true){
+            String message=input.nextLine();
+            smp.sendMessage(message);
+           // smp.sendMessage("hello");
+>>>>>>> 6415bc3bfa548440a9c01061277dcb60e2f9a95a
             String msg=smp.receiveMessage();
             System.out.print("Client  "+msg);
             if(msg.equals("stop")){
                  break;
             }
+<<<<<<< HEAD
             String message=input.nextLine();
             smp.sendMessage(message);
            // smp.sendMessage("hello");
+=======
+>>>>>>> 6415bc3bfa548440a9c01061277dcb60e2f9a95a
 
         }
         smp.close();
@@ -54,4 +65,8 @@ public class SimpleServer {
     }
 
     
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6415bc3bfa548440a9c01061277dcb60e2f9a95a
